@@ -21,5 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('toDos', ToDoController::class);
-Route::resource('toDoDetails', ToDoDetailController::class);
+Route::resource('todos', ToDoController::class);
+Route::resource('tododetails', ToDoDetailController::class);
